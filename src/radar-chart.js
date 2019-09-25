@@ -378,3 +378,10 @@ var RadarChart = {
     .call(chart);
   }
 };
+
+if( typeof window !== 'undefined' ) {
+  window.RadarChart = RadarChart
+} else {
+  module.export = RadarChart
+}
+
