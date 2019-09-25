@@ -379,9 +379,4 @@ var RadarChart = {
   }
 };
 
-if( typeof window !== 'undefined' ) {
-  window.RadarChart = RadarChart
-} else {
-  module.exports = RadarChart
-}
-
+module.exports = RadarChart
