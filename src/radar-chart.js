@@ -382,6 +382,6 @@ var RadarChart = {
 if( typeof window !== 'undefined' ) {
   window.RadarChart = RadarChart
 } else {
-  module.export = RadarChart
+  module.exports = RadarChart
 }
 
