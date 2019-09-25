@@ -11,7 +11,7 @@ var RadarChart = {
     maxValue: 0,
     minValue: 0,
     radians: 2 * Math.PI,
-    color: d3.scale.category10(),
+    color: () => {},
     axisLine: true,
     axisText: true,
     circles: true,
@@ -31,7 +31,7 @@ var RadarChart = {
     },
     transitionDuration: 300
   },
-  chart: function() {
+  chart: function(d3) {
     // default config
     var cfg = Object.create(RadarChart.defaultConfig);
     function setTooltip(tooltip, msg){
